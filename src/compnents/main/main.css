@@ -1,0 +1,227 @@
+/* Main Section Styling */
+main {
+    background-color: #f1f1f1;
+    padding: 9px;
+    padding-left: 383px;
+    padding-right: 256px;
+    border-bottom-right-radius: 140px;
+    height: auto;
+    color: #1f2756;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Text */
+.h-t {
+    color: #ff5e39;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 10%;
+    font-weight: 300;
+    text-align: center;
+}
+
+.line {
+    border-top: 4px solid #ff5e39;
+    width: 50px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+/* Main Content Flex Layout */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Main Image */
+.main-image {
+    width: 45%;
+    margin-left: 20px;
+}
+
+.main-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Text and Links */
+.main-txt {
+    width: 50%;
+}
+
+.main-heading {
+    margin-bottom: 20px;
+}
+
+.main-heading h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.main-description p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* Main Links */
+.main-links {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.main-links a {
+    text-decoration: none;
+    color: #ff5e39;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    margin-right: 15px;
+}
+
+.main-links a img {
+    margin-left: 6px;
+}
+
+.main-links a:hover {
+    color: #1f2756;
+    background-color: rgba(255, 94, 57, 0.1);
+}
+
+.w-vid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f2756;
+    color: #fff;
+}
+
+.w-vid .player-ico {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    background-color: #ff5e39;
+    border-radius: 50%;
+    padding: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.w-vid:hover .player-ico {
+    background-color: #1f2756;
+}
+
+/* Responsive Design */
+
+/* Tablets and smaller screens */
+@media (max-width: 1024px) {
+    main {
+        padding-left: 50px;
+        padding-right: 50px;
+        border-bottom-right-radius: 80px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-image {
+        width: 80%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .main-txt {
+        width: 100%;
+    }
+
+    .main-heading h1 {
+        font-size: 2rem;
+    }
+
+    .main-description p {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .h-t {
+        font-size: 12px;
+    }
+
+    .line {
+        width: 30px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-image img {
+        width: 100%;
+    }
+
+    .main-heading h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-description p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .main-links a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+    main {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .h-t {
+        font-size: 10px;
+    }
+
+    .line {
+        width: 20px;
+    }
+
+    .main-heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-description p {
+        font-size: 0.8rem;
+    }
+
+    .main-links a {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}

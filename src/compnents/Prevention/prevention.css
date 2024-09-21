@@ -1,0 +1,114 @@
+.prevention-container {
+    width: 100%;
+    margin-top: 50px;
+    color: #1f2756;
+    padding: 0 20px;
+}
+
+.prevention-container .container-heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prevention-container .c-line {
+    border-top: 4px solid #ff5e39;
+    width: 100px;
+    margin: 20px auto;
+    border-radius: 3px;
+}
+
+.prevention-container .container-desc-txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.prevention-container .container-desc-txt p {
+    max-width: 1200px;
+    line-height: 1.6;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #60697b;
+    padding: 0 15px;
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.container-cards .card {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container-cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.container-cards .card .card-image img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.container-cards .card .card-title h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.container-cards .card .card-dec {
+    font-size: 0.9rem;
+    color: #a4a4a4;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .prevention-container .container-desc-txt p {
+        max-width: 90%;
+        font-size: 0.95rem;
+    }
+
+    .container-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .container-cards .card {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .prevention-container .container-desc-txt p {
+        font-size: 0.85rem;
+        padding: 0 10px;
+    }
+
+    .container-cards .card {
+        padding: 10px;
+    }
+
+    .container-cards .card .card-image img {
+        max-width: 80px;
+    }
+
+    .container-cards .card .card-title h3 {
+        font-size: 1rem;
+    }
+
+    .container-cards .card .card-dec {
+        font-size: 0.8rem;
+    }
+}
